@@ -8,10 +8,7 @@ const getAge = function (aniversario, morte) {
 const findTheOldest = function (people) {
   return people.reduce((maisVelho, pessoaAtual) => {
     const idadeMaisVelha = getAge(maisVelho.yearOfBirth, maisVelho.yearOfDeath);
-    const idadeAtual = getAge(
-      pessoaAtual.yearOfBirth,
-      pessoaAtual.yearOfDeath,
-    );
+    const idadeAtual = getAge(pessoaAtual.yearOfBirth, pessoaAtual.yearOfDeath);
     return idadeMaisVelha < idadeAtual ? pessoaAtual : maisVelho;
   });
 };
