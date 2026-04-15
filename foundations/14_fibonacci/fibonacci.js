@@ -15,6 +15,7 @@ const fibonacci = function(contagem) {
     let anterior = 0;
     let atual = 1 ;
     let proximo = 0;
+    
     for (let i = 2; i <= num; i++) { 
         proximo = anterior + atual;
         anterior = atual;
